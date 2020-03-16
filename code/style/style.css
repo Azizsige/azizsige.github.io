@@ -1,0 +1,448 @@
+@font-face {
+  font-family: 'montserratregular';
+  src: url('fonts/montserrat.regular-webfont.woff2') format('woff2'),
+    url('fonts/montserrat.regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  padding: 0;
+  border: 15px solid #212121;
+  margin: 0;
+  background-color: #f4f6f6;
+}
+
+.head_profileName {
+  min-height: 90vh;
+}
+
+.head_profileName .profile_name {
+  margin-top: 250px;
+}
+
+.head_profileName .profile_name .text-name {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 60px;
+  font-weight: 900;
+  color: #212121;
+}
+
+.head_profileName .profile_name .text-me {
+  font-family: 'Montserrat', sans-serif;
+  color: #212121;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.head_profileName .contact-box {
+  background-color: #f4f6f6;
+  box-shadow: 5px 5px 5px #b9bbbb, -5px -5px 5px #ffffff;
+  width: 401px;
+  height: 176px;
+  margin-top: 40px;
+  border-radius: 2px;
+}
+
+.head_profileName .contact-box ul li {
+  font-size: 18px;
+  text-align: left;
+  list-style-type: none;
+  font-weight: 600;
+  margin: 20px 0;
+  margin-top: 20px;
+  color: #212529;
+}
+
+.head_profileName .contact-box ul li.email a {
+  color: #212529;
+}
+
+.head_profileName .contact-box ul li.github a {
+  color: #212529;
+}
+
+/* Skill */
+.mySkills-container {
+  width: 70%;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-bottom: 0px;
+  margin-bottom: 80px;
+}
+
+.mySkills-container .heading {
+  color: #212529;
+  margin: 0 0 30px 0;
+  font-size: 35px;
+  font-weight: 800;
+}
+
+.mySkills-container .skills-row {
+  background: #f4f6f6;
+  box-shadow: 5px 5px 5px #b9bbbb, -5px -5px 5px #ffffff;
+  color: #212529;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  text-align: center;
+  padding: 20px 0;
+  border-radius: 2px;
+}
+
+.mySkills-container .skills-row .language {
+  font-weight: 600;
+  margin: 5px 0;
+}
+
+.mySkills-container .skills-row.second {
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 30px;
+}
+
+/* Footer */
+.footer-container {
+  position: relative;
+  width: 70%;
+  max-width: 1000px;
+  margin: 150px auto;
+  text-align: center;
+}
+
+.footer-container .know-more {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 900;
+  color: #212529;
+  margin: 10px 0;
+}
+
+.footer-container .footer-contact-box {
+  width: 50%;
+  height: auto;
+  margin: 40px auto 0 auto;
+  background: #f4f6f6;
+  box-shadow: 5px 5px 5px #b9bbbb, -5px -5px 5px #ffffff;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 25px 40px;
+  border-radius: 2px;
+}
+
+.footer-container .footer-contact-box li {
+  font-size: 18px;
+  text-align: center;
+  list-style-type: none;
+  font-weight: 600;
+  color: #f4f6f6;
+}
+
+.footer-container .footer-contact-box li a {
+  color: #212529;
+}
+
+.footer-container .footer-contact-box li a:hover {
+  text-decoration: none;
+}
+
+
+/* Responsive */
+/* Mini Android */
+@media only screen and (min-width: 300px) and (max-width: 319px) {
+  .head_profileName {
+    min-height: 30em !important;
+  }
+
+  .profile_name {
+    margin-top: 100px !important;
+  }
+
+  .text-name {
+    font-size: 15pt !important;
+    color: #212529 !important;
+  }
+
+  .text-me {
+    font-size: 13pt !important;
+    color: #212529 !important;
+    font-weight: 500 !important;
+  }
+
+  .head_profileName .contact-box {
+    margin-top: 20px;
+    width: auto !important;
+    box-shadow: inset 5px 5px 5px #b9bbbb, inset -5px -5px 5px #ffffff !important;
+  }
+
+  .contact-box ul li {
+    font-size: 0.8em !important;
+    text-align: center !important;
+  }
+
+  .mySkills-container .heading {
+    font-size: 20pt !important;
+  }
+
+  .mySkills-container .skills-row {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 5px !important;
+    row-gap: 30px !important;
+  }
+
+  .mySkills-container .skillRow-language {
+    font-size: 9pt !important;
+  }
+
+  .mySkills-container .skillRow-language .language {
+    font-weight: 700 !important;
+  }
+
+  .footer-container {
+    margin-bottom: 70px !important;
+  }
+
+  .footer-container .know-more {
+    font-size: 15pt !important;
+  }
+
+  .footer-container .footer-contact-box {
+    grid-template-columns: repeat(1, 1fr) !important;
+    padding: auto 25px !important;
+    width: 100% !important;
+  }
+
+  .footer-container .footer-contact-box li {
+    padding-top: 40px !important;
+  }
+
+  .footer-container .footer-contact-box li:first-child {
+    padding-top: 0px !important;
+  }
+}
+
+/* Standard Android */
+/* RED */
+@media only screen and (min-width: 320px) and (max-width: 359px) {
+  .head_profileName {
+    min-height: 30em !important;
+  }
+
+  .profile_name {
+    margin-top: 100px !important;
+  }
+
+  .text-name {
+    font-size: 16pt !important;
+    color: #212529 !important;
+  }
+
+  .text-me {
+    font-size: 13pt !important;
+    color: #212529 !important;
+    font-weight: 500 !important;
+  }
+
+  .head_profileName .contact-box {
+    margin-top: 20px;
+    width: auto !important;
+    box-shadow: inset 5px 5px 10px #b0b1b1, inset -5px -5px 10px #ffffff !important;
+  }
+
+  .contact-box ul li {
+    font-size: 1em !important;
+    text-align: center !important;
+  }
+
+  .mySkills-container .skills-row {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 5px !important;
+    row-gap: 30px !important;
+  }
+
+  .mySkills-container .skillRow-language {
+    font-size: 9pt !important;
+  }
+
+  .mySkills-container .skillRow-language .language {
+    font-weight: 700 !important;
+  }
+
+  .footer-container {
+    margin-bottom: 70px !important;
+  }
+
+  .footer-container .know-more {
+    font-size: 1.3em !important;
+  }
+
+  .footer-container .footer-contact-box {
+    grid-template-columns: repeat(1, 1fr);
+    padding: auto 25px;
+    width: 100% !important;
+  }
+
+  .footer-container .footer-contact-box li {
+    padding-top: 40px !important;
+  }
+
+  .footer-container .footer-contact-box li:first-child {
+    padding-top: 0px !important;
+  }
+}
+
+/* Can use in android or deafult use this size*/
+/* YELLOW */
+@media only screen and (min-width: 360px) and (max-width: 479px) {
+  .head_profileName {
+    min-height: 35em !important;
+  }
+
+  .profile_name {
+    margin-top: 100px !important;
+  }
+
+  .text-name {
+    font-size: 19pt !important;
+    font-weight: bold !important;
+    color: #212529 !important;
+  }
+
+  .text-me {
+    font-size: 17pt !important;
+    color: #212529 !important;
+    font-weight: 500 !important;
+  }
+
+  .contact-box {
+    margin-top: 20px;
+    width: 90% !important;
+  }
+
+  .contact-box ul li {
+    font-size: 1em !important;
+    text-align: center !important;
+  }
+
+  .mySkills-container .heading {
+    text-align: center;
+  }
+
+  .mySkills-container .skills-row {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 5px !important;
+    row-gap: 30px !important;
+  }
+
+  .mySkills-container .skillRow-language {
+    font-size: 1em !important;
+    font-weight: 700 !important;
+  }
+
+  .footer-container {
+    margin-bottom: 60px !important;
+  }
+
+  .footer-container .know-more {
+    font-size: 1.5em !important;
+  }
+
+  .footer-container .footer-contact-box {
+    grid-template-columns: repeat(1, 1fr) !important;
+    padding: auto 25px !important;
+  }
+
+  .footer-container .footer-contact-box li {
+    padding-top: 40px !important;
+  }
+
+  .footer-container .footer-contact-box li:first-child {
+    padding-top: 0px !important;
+  }
+}
+
+/* Medium Android */
+/* SALMON */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .head_profileName {
+    min-height: 35em !important;
+  }
+
+  .profile_name {
+    margin-top: 100px !important;
+  }
+
+  .text-name {
+    font-size: 2em !important;
+    color: #212529 !important;
+  }
+
+  .text-me {
+    font-size: 1.3em !important;
+    color: #212529 !important;
+  }
+
+  .mySkills-container .skills-row.skillRow-language {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 5px !important;
+    row-gap: 30px !important;
+  }
+
+  .mySkills-container .skillRow-language {
+    font-size: 1em !important;
+    font-weight: bold !important;
+  }
+
+  .footer-container {
+    margin-bottom: 60px !important;
+  }
+
+  .footer-container .know-more {
+    font-size: 2.1em !important;
+  }
+
+  .footer-container .footer-contact-box {
+    grid-template-columns: repeat(1, 1fr);
+    padding: auto 25px;
+    width: 15em !important;
+  }
+
+  .footer-container .footer-contact-box li {
+    padding-top: 40px !important;
+  }
+
+  .footer-container .footer-contact-box li:first-child {
+    padding-top: 0px !important;
+  }
+}
+
+/* Landscape Android */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .profile_name {
+    margin-top: 200px !important;
+  }
+
+  .text-name {
+    font-size: 3.3em !important;
+    color: #212529 !important;
+  }
+
+  .text-me {
+    font-size: 2em !important;
+    color: #212529 !important;
+  }
+
+  .footer-container .footer-contact-box {
+    grid-template-columns: repeat(1, 1fr);
+    padding: auto 25px;
+  }
+
+  .footer-container .footer-contact-box li {
+    padding-top: 40px !important;
+  }
+
+  .footer-container .footer-contact-box li:first-child {
+    padding-top: 0px !important;
+  }
+}
