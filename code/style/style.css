@@ -302,7 +302,7 @@ body {
   .text-name {
     font-size: 19pt !important;
     font-weight: bold !important;
-    color: green !important;
+    color: #212529 !important;
   }
 
   .text-me {
